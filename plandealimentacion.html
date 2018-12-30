@@ -1,0 +1,296 @@
+    <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      	    <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      	<title></title>
+      	<meta name="author" content="herramienta nutricional">
+          <link href="css/estilohn.css" type="text/css" rel="stylesheet">
+      	<link rel="#" href="#">
+      </head>
+      <body>  	
+      <header>
+      <div class="container-fluid fixed-top no-gutters">
+      <!-- Primer menu-->
+      <!--Menu pantallas medianas-->
+     <nav class="navbar nav-p navbar-expand-md navbar-dark py-0 d-none d-md-block d-sm-none">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white ml-5 px-3 py-3" href="home.html">Logo</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link boton-consulta-nutricional text-white px-3 py-3" href="consultanutricional.html">Consulta Nutricional</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton-crear-cliente text-white px-3 py-3" href="crearcliente.html">Crear Cliente</a>
+            </li>
+          </ul>
+          <!-- Menu usuario-->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white mr-5 px-3 py-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Usuario
+              </a>
+              <div class="dropdown-menu mr-0" aria-labelledby="navbarDropdown">
+              	<span class="fas fa-caret-up flecha-arriba text-white"></span>
+                <a class="dropdown-item mr-3 py-2 px-5 border-bottom text-muted" href="#"><span class="fas fa-user mr-3 text-dark"></span>Usuario</a>
+                <a class="dropdown-item mr-3 py-2 px-5 text-muted" href="#"><span class="fas fa-sign-out-alt mr-3 text-dark"></span>Salir</a>
+              </div>
+            </li>
+          </ul>
+        </div>  
+      </nav>   
+      <!--Menu pantallas pequeñas-->
+        <nav class="navbar nav-pp nav-p navbar-expand-md navbar-dark py-0 px-0 d-none d-block d-md-none">
+          <button class="bg-white p-2 border-0" type="button" id="menuButton">
+          <span id="boton-menu" class="fas fa-bars ml-0"></span>
+          </button>  
+            <div class="menu-pp ml-0">
+             <ul class="navbar-nav bg-white">
+               <li class="p-0 pb-3 mt-0">
+                 <button class="bg-white px-2 border-0 mt-1" type="button" id="dropdownMenuButton">
+                 <span id="boton-menu" class="fas fa-bars mt-2 ml-0"></span>
+                 </button>
+                 <h1 class="h6 d-inline ml-1 pb-2">Nombre</h1>
+               </li> 
+               <li class="nav-item border-bottom">
+                 <a class="dropdown-item ml-1 py-3 pr-5" href="home.html">Inicio</a>
+               </li>
+               <li class="nav-item ml-md-3 border-bottom">
+                 <a class="dropdown-item py-3 pr-5" href="consultanutricional.html">Consulta Nutricional</a>
+               </li>
+               <li class="nav-item ml-md-3 border-bottom">
+                 <a class="dropdown-item py-3 pr-5" href="crearcliente.html">Crear Cliente</a>
+               </li>
+               <li class="nav-item border-bottom">
+                 <a class="dropdown-item  py-3 pr-5" href="clientes.html">Clientes</a>
+               </li>
+               <li class="nav-item border-bottom">
+                 <a class="dropdown-item py-3 pr-5" href="plandealimentacion.html">Plan de alimentacion</a>
+               </li>
+               <li clas s="nav-item">
+                 <a class="dropdown-item py-3 pr-5" href="tareas.html">Tareas</a>
+               </li>
+             </ul>
+            </div>
+          <a class="navbar-brand ml-1" href="home.html">Logo</a>
+          <button class="btn btn-link float-right" type="button" id="botonMenuUsuario">
+          <span class="fas fa-cog text-white my-2 mr-1"></span>
+          </button>
+          <div class="menuUsuario">
+            <a class="nav-link nav-link-usuario dropdown-toggle usuario text-white mr-5 pr-5 py-3 w-100" href="#" role="button" data-toggle="dropdown">
+                Usuario
+            </a>
+          </div> 
+              <div class="dropdown-menu-pp w-100" aria-labelledby="navbarDropdown" id="menu-usuario">
+                <a class="dropdown-item mr-3 py-2 border-bottom border-muted mt-0 text-muted" href="#"><span class="fas fa-user ml-1 mr-2"></span>Usuario</a>
+                <a class="dropdown-item mr-3 mt-2 py-2 text-muted" href="#"><span class="fas fa-sign-out-alt ml-1 mr-2"></span>Salir</a>
+              </div>        
+        </nav>
+
+      <!--Segundo menu pantalla mediana-->
+      <nav class="navbar navbar-expand-md navbar navbar-light bg-white py-0 d-none d-md-block d-sm-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navSm mr-auto">
+            <li class="nav-item">
+              <a class="nav-link boton-sm boton-inicio ml-5 mr-2 px-3 py-4" href="home.html"><span class="fas fa-home mr-2"></span>Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton-sm boton-clientes mr-2 px-3 py-4" href="clientes.html"><span class="fas fa-users mr-2"></span>Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="botonSmActive nav-link boton-sm boton-seguimiento mr-2 px-3 py-4" href="plan
+              dealimentacion.html"><span class="fas fa-address-book mr-2"></span>Plan de alimentacion
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton-sm  boton-tareas px-3 py-4" href="tareas.html" ><span class="far fa-edit mr-2"></span>Tareas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+      </header>
+      
+    <!--Menus semanal-->
+    <!--plan menus pantallas extra grandes-->
+    <div class="planMenus d-none d-xl-block d-sm-none">
+      <div class="card w-75 mx-auto">
+        <div class="card-header bg-white border-0">
+          <div class="row no-gutters">	
+          <div  class="col-2">	
+          <button class="btn btn-light boton-semana boton-semanaActive bg-white">SEMANA ACTUAL</button>
+          </div> 
+          <div class="col-3">
+          <button class="btn btn-light boton-semana bg-white">SEMANA SIGUIENTE</button>
+          </div>
+          <button class="btn btn-light boton-lista bg-white ml-auto">LISTA DE LA COMPRA<span class="fas fa-angle-right ml-2"></span></button>
+          </div>
+          <div class="row mt-4">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">LUNES <br> 01 agosto</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">MARTES</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">MIERCOLES</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">JUEVES</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">VIERNES</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">SABADO</button>
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">DOMINGO</button>	
+          </div>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote card-menus mb-0">
+          <div class="card">
+            <div class="card-header text-white bg-secondary py-4">
+            </div>
+            <span class="fas fa-caret-down flecha-abajo text-secondary"></span>
+            <div class="card-body">
+              <blockquote class="row mt-2 blockquote">
+                <div class="card col-2 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">DESAYUNO</p>
+                    <hr class="col-7 mt-0"> 
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-3 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">MEDIA MAÑANA</p>
+                    <hr class="col-7 mt-0"> 
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-3 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">ALMUERZO</p>
+                    <hr class="col-6 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-2 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">MERIENDA</p>
+                    <hr class="col-7 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div>
+                <div class="card col-2 border-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">COMIDA</p>
+                    <hr class="col-6 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+              </blockquote>
+            </div>
+          </div>
+          </blockquote>
+        </div>
+       </div>
+     </div>
+    <!--pantallas pequeñas-mediana-grandes-->
+    <div class="planMenus d-xl-none d-block d-xl-none">
+      <div class="card mx-md-3">
+        <div class="card-header bg-white border-0">
+          <div class="row no-gutters">	
+          <div  class="col-12 col-md-3">	
+          <button class="btn btn-light boton-semana boton-semanaActive bg-white">SEMANA ACTUAL</button>
+          </div> 
+          <div class="col-12 col-md-3 ml-md-2 ml-lg-0">
+          <button class="btn btn-light boton-semana bg-white mt-2 mt-md-0 ml-lg-4">SEMANA SIGUIENTE</button>
+          </div>
+          <button class="btn btn-light boton-lista bg-white mt-2 mt-md-0 ml-md-auto">LISTA DE LA COMPRA<span class="fas fa-angle-right ml-2"></span></button>
+          </div>
+          <div class="row mt-4 no-gutters">
+          	<div class="col-md-3 col-lg-2">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">LUNES <br> 01 agosto</button>
+            </div>
+            <div class="col-md-3 col-lg-2">
+            <button class="btn btn-light boton-dias mt-2 py-2 px-4 mr-2 mt-md-0">MARTES</button>
+            </div>
+            <div class="col-md-3 col-lg-2">
+            <button class="btn btn-light boton-dias mt-2 py-2 px-4 mr-2 mt-md-0">MIERCOLES</button>
+            </div>
+            <div class="col-md-3 col-lg-2">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2 mt-2 mt-md-0">JUEVES</button>
+            </div>
+            <div class="col-md-3 col-lg-2 mt-md-2 mt-lg-0">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2 mt-2 mt-md-0">VIERNES</button>
+            </div>
+            <div class="col-md-3 col-lg-2 mt-md-2 mt-lg-0">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2 mt-2 mt-md-2 mt-md-0">SABADO</button>
+            </div>
+            <div class="col-md-3 col-lg-2 mt-2">
+            <button class="btn btn-light boton-dias py-2 px-4 mr-2">DOMINGO</button>	
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote card-menus mb-0">
+          <div class="card">
+            <div class="card-header text-white bg-secondary py-4">
+            </div>
+            <span class="fas fa-caret-down flecha-abajo text-secondary"></span>
+            <div class="card-body">
+              <blockquote class="row mt-2 blockquote">
+                <div class="card col-12 col-md-2 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">DESAYUNO</p>
+                    <hr class="col-7 mt-0"> 
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-12 col-md-3 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">MEDIA MAÑANA</p>
+                    <hr class="col-7 mt-0"> 
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-12 col-md-3 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">ALMUERZO</p>
+                    <hr class="col-6 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+                <div class="card col-12 col-md-2 border-top-0 border-bottom-0 border-left-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">MERIENDA</p>
+                    <hr class="col-7 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div>
+                <div class="card col-12 col-md-2 border-0 p-2">
+                  <blockquote class="blockquote mb-0">
+                    <p class="h6 text-center card-p">COMIDA</p>
+                    <hr class="col-6 mt-0">
+                    <p class="mt-2 p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nobis, quae atque.</p>
+                  </blockquote>
+                </div> 
+              </blockquote>
+            </div>
+          </div>
+          </blockquote>
+        </div>
+       </div>
+     </div>
+
+
+      <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"> </script>
+      <script defer src="fontawesome-all.js"></script>
+      <script src="js/main.js"></script>
+         <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </body>
+      </html>

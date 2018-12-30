@@ -1,0 +1,420 @@
+
+/*=============================================
+MP 
+=============================================*/
+/*Globales*/
+body{
+   background: rgb(230, 230, 230);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 13px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header{
+  color: gray;
+  font-size: 18px;	
+}
+
+
+.card-body{
+  color: gray;
+  font-size: 16px;
+}
+
+label{
+  font-size: 15px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/*Menu pantallas medianas*/
+header{
+  font-size: 19px;
+}
+
+.nav-p{
+	background:rgb(51, 204, 51);
+}
+
+.nav-link:hover{
+	background:rgb(46, 184, 46);
+}
+
+.boton-menup-active{
+	background:rgb(46, 184, 46);
+}
+
+.dropdown-menu{
+   box-shadow:3px 3px silver;
+   position:absolute;
+   margin-top: 0px;
+   margin-left: -83px;
+}
+
+.flecha-arriba{
+  position: absolute;
+  font-size: 25px;
+  margin-top: -25px;
+  margin-left: 172px;  
+}
+
+/*menu-nav pantallas pequeñas*/
+
+#botonMenuUsuario:hover{
+  padding: 10px;
+}
+
+#boton-menu{
+	font-size: 32px;
+	color:green;
+}
+
+.container-fluid-active{
+   width: 100%;
+   height: 100vh;
+   background: rgba(0,0,0,.3);
+}
+
+.menu-pp{
+	display: none;
+	position: absolute;
+	margin-top: -57px;
+}
+
+#menu-usuario{
+  background:rgb(51, 204, 51);
+  margin-top: -1px;
+}
+
+.menuUsuario{
+	font-size: 15px;
+	display: none;
+}
+
+.dropdown-menu-pp{
+  display: none;
+}
+
+/*Segundo menu pantalla mediana*/
+.boton-sm{
+	background-color: white;
+}
+
+.boton-sm:hover{
+	background: rgb(220,220,220);	
+}
+
+.botonSmActive{
+	color: orange !important;
+	border-bottom: solid 2px orange;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/*cliente - Seccion filtrar clientes*/
+@media (min-width:1200px){
+  #clientes{
+   margin-top: 170px;
+ }
+ }
+
+@media (max-width:1199px) and (min-width: 768px){
+  #clientes{
+   margin-top: 170px;
+ }
+}
+
+@media only screen and (max-width:767px) { 
+ #clientes{
+   margin-top: 70px;
+ }
+ }
+
+/*cliente - Seleccionar clientes*/
+
+.botonClientes:hover{
+	background: rgb(220,220,220);
+}
+
+.botonClientes-click{
+	background-color: white;
+	color: red;
+}
+
+/*crearcliente-formularios*/
+@media (min-width:1200px){
+  #form-clientes{
+   margin-top: 160px;
+  }
+ }
+
+@media (max-width:1199px) and (min-width: 768px){
+ #form-clientes{
+   margin-top: 160px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+ #form-clientes{
+   margin-top: 70px;
+  }
+ }
+
+/* consulta nutricional*/
+
+@media (min-width:1200px){
+  #indicadores-salud{
+  margin-top: 160px;
+  }
+ }
+
+@media (max-width:1199px) and (min-width: 768px){
+  #indicadores-salud{
+  margin-top: 160px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  #indicadores-salud{
+  margin-top: 70px;
+  }
+ }
+
+.indicadores-salud{
+	color: gray;
+	background: none;
+	border: none;
+}
+
+
+.indicadores-salud:hover{	
+  border-bottom: solid 3px orange;
+  color: orange;	
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.botonIndicadoressaludActive{
+  border-bottom: solid 3px orange;
+  color: orange;	
+  background-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.boton-calcular{
+  border: solid 3px gainsboro;
+  border-radius: 30px;
+  color: black;
+}
+
+.boton-calcular:hover{
+  border: none;	
+  background-color: orange;
+}
+
+/*consulta nutricional-riesgo cardiovascular*/
+#riesgo{
+	display:none;	
+}
+
+/*consulta nutricional-necesidades caloricas*/
+#calorias{
+	display: none;	
+}
+
+/*tareas*/
+@media (min-width:1200px){
+.filtrar-tarea{
+   margin-top: 166px;
+  }
+ }
+
+@media (max-width:1199px) and (min-width: 768px){
+.filtrar-tarea{
+   margin-top: 165px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+.filtrar-tarea{
+   margin-top: 70px;
+  }
+}
+
+.boton-tareas{
+ 	background: none;
+ 	color: gray;
+ 	border:none;
+ }
+
+.boton-tareas:hover{
+	background: rgb(220,220,220);
+}
+
+.botonTareas-active{
+	background-color: white;
+	color: red;
+}
+
+/*plan de alimentacion*/
+@media (min-width:1200px){
+ .planMenus{
+    margin-top: 166px;  
+ }
+}
+
+@media (max-width:1199px) and (min-width: 768px){
+.planMenus{
+   margin-top: 165px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+.planMenus{
+   margin-top: 70px;
+  }
+}
+
+.boton-semana{
+  color:gray;
+}
+
+.boton-semana:hover{
+  border-bottom: solid 3px orange;	
+}
+
+.boton-semanaActive{
+  font-weight: bold;
+  border-bottom: solid 3px orange;
+}
+
+.boton-lista{
+	font-weight: bold;
+	border: solid 3px darkorchid;
+	color:darkorchid;
+}
+
+.boton-lista:hover{
+	font-weight: bold;
+	border: solid 3px darkorchid;
+	color:darkorchid;
+}
+
+.boton-dias{
+	color:slategrey;
+	font-weight: bold;
+}
+
+.boton-dias:hover{
+	color:slategrey;
+	font-weight: bold;
+}
+
+.boton-diasActive{
+	background-color: slategrey;
+	color:white;
+}
+
+.card-menus{
+  margin-top: -10px;
+}
+
+.flecha-abajo{
+    position: absolute;
+    font-size: 38px;
+    margin-top: 34px;
+    margin-left: 15px;
+}
+
+.p2{
+	font-size: 15px; 
+}
+
+
+
+
+
+
+/*
+[class*="row"] {
+	border: 1px solid red;
+}
+[class*="col-"] {
+	border: 1px solid black;
+}
+
+    
+
+
+
+
